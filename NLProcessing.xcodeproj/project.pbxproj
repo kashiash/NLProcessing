@@ -11,6 +11,8 @@
 		76612B0B29684059000B26DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612B0A29684059000B26DF /* ContentView.swift */; };
 		76612B0D2968405B000B26DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76612B0C2968405B000B26DF /* Assets.xcassets */; };
 		76612B112968405B000B26DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76612B102968405B000B26DF /* Preview Assets.xcassets */; };
+		76612B18296844A1000B26DF /* NLSpeechSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612B17296844A1000B26DF /* NLSpeechSynthesis.swift */; };
+		76612B1A296846BA000B26DF /* PanTadeusz.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76612B19296846BA000B26DF /* PanTadeusz.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		76612B0C2968405B000B26DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76612B0E2968405B000B26DF /* NLProcessing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NLProcessing.entitlements; sourceTree = "<group>"; };
 		76612B102968405B000B26DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		76612B17296844A1000B26DF /* NLSpeechSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLSpeechSynthesis.swift; sourceTree = "<group>"; };
+		76612B19296846BA000B26DF /* PanTadeusz.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PanTadeusz.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				76612B0829684059000B26DF /* NLProcessingApp.swift */,
+				76612B17296844A1000B26DF /* NLSpeechSynthesis.swift */,
 				76612B0A29684059000B26DF /* ContentView.swift */,
 				76612B0C2968405B000B26DF /* Assets.xcassets */,
 				76612B0E2968405B000B26DF /* NLProcessing.entitlements */,
 				76612B0F2968405B000B26DF /* Preview Content */,
+				76612B19296846BA000B26DF /* PanTadeusz.txt */,
 			);
 			path = NLProcessing;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 			files = (
 				76612B112968405B000B26DF /* Preview Assets.xcassets in Resources */,
 				76612B0D2968405B000B26DF /* Assets.xcassets in Resources */,
+				76612B1A296846BA000B26DF /* PanTadeusz.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 			files = (
 				76612B0B29684059000B26DF /* ContentView.swift in Sources */,
 				76612B0929684059000B26DF /* NLProcessingApp.swift in Sources */,
+				76612B18296844A1000B26DF /* NLSpeechSynthesis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +295,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kashiash.NLProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +335,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kashiash.NLProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
