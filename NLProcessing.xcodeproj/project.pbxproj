@@ -13,6 +13,8 @@
 		76612B112968405B000B26DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76612B102968405B000B26DF /* Preview Assets.xcassets */; };
 		76612B18296844A1000B26DF /* NLSpeechSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612B17296844A1000B26DF /* NLSpeechSynthesis.swift */; };
 		76612B1A296846BA000B26DF /* PanTadeusz.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76612B19296846BA000B26DF /* PanTadeusz.txt */; };
+		76612B1C29685C25000B26DF /* NLTextTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612B1B29685C25000B26DF /* NLTextTokenizer.swift */; };
+		76612B1E29685E55000B26DF /* NlDataDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612B1D29685E55000B26DF /* NlDataDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		76612B102968405B000B26DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76612B17296844A1000B26DF /* NLSpeechSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLSpeechSynthesis.swift; sourceTree = "<group>"; };
 		76612B19296846BA000B26DF /* PanTadeusz.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PanTadeusz.txt; sourceTree = "<group>"; };
+		76612B1B29685C25000B26DF /* NLTextTokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLTextTokenizer.swift; sourceTree = "<group>"; };
+		76612B1D29685E55000B26DF /* NlDataDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NlDataDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				76612B0E2968405B000B26DF /* NLProcessing.entitlements */,
 				76612B0F2968405B000B26DF /* Preview Content */,
 				76612B19296846BA000B26DF /* PanTadeusz.txt */,
+				76612B1B29685C25000B26DF /* NLTextTokenizer.swift */,
+				76612B1D29685E55000B26DF /* NlDataDetector.swift */,
 			);
 			path = NLProcessing;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 			files = (
 				76612B0B29684059000B26DF /* ContentView.swift in Sources */,
 				76612B0929684059000B26DF /* NLProcessingApp.swift in Sources */,
+				76612B1C29685C25000B26DF /* NLTextTokenizer.swift in Sources */,
+				76612B1E29685E55000B26DF /* NlDataDetector.swift in Sources */,
 				76612B18296844A1000B26DF /* NLSpeechSynthesis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
