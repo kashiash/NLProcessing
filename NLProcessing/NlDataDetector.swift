@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NLDataDetector: View {
-    @State private var inputString = " Zygmuntowska street, home: 13/28, city: Gliwice Polska. Telefon do niego to +48601055393, a adres email : dupek@gmail.com  "
+    var  inputString: String
        @State private var results = [String]()
        
        let detector = try! NSDataDetector(
@@ -19,8 +19,10 @@ struct NLDataDetector: View {
        var body: some View {
            NavigationStack {
                VStack {
-                   TextEditor(text: $inputString)
+                   
+                   Text( self.inputString)
                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.orange.gradient, lineWidth: 2))
+                      
                    Button("Process") {
                        results = []
                        let range = NSRange(0..<inputString.count)
@@ -54,14 +56,18 @@ struct NLDataDetector: View {
                        Text(item)
                    }
                }
-               .navigationTitle("DevTechie")
-               .padding()
+               
+             
+               
+         
            }
+           .frame(maxWidth: .infinity,maxHeight: .infinity,alignment: .bottomTrailing)
+           .padding()
        }
 }
 
 struct NLDataDetector_Previews: PreviewProvider {
     static var previews: some View {
-        NLDataDetector()
+        NLDataDetector(inputString: " Zygmuntowska street, home: 13/28, city: Gliwice Polska. Telefon do niego to +48601055393, a adres email : dupek@gmail.com  ")
     }
 }

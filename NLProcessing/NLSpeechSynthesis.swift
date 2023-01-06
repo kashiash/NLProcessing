@@ -16,14 +16,9 @@ struct NLSpeechSynthesis: View {
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.5), lineWidth: 2))
                 .padding()
-            Button("Load story"){
-                
-                    text = self.model.data
-                  
-              
-            }
-            Button("Speak") {
 
+            Button("Poczytaj mi mamo ...") {
+                text = self.model.data
                 recognizer.processString(text)
                 let lang = recognizer.dominantLanguage!.rawValue
                 
