@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct NlDataDetector: View {
-    @State private var inputString = "DevTechie can be reached at devtechieinc@gmail.com. It's located in 123 main street, San Francisco, California. You can call (555)555-5555 for more info. Jacek Placek mieszka na ulicy Jana Kosiuszki 13/28 Polska. Telfon do niego to +48601055393, a adres email : dupek@gmail.com"
+struct NLDataDetector: View {
+    @State private var inputString = " Zygmuntowska street, home: 13/28, city: Gliwice Polska. Telefon do niego to +48601055393, a adres email : dupek@gmail.com  "
        @State private var results = [String]()
        
        let detector = try! NSDataDetector(
@@ -22,6 +22,7 @@ struct NlDataDetector: View {
                    TextEditor(text: $inputString)
                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.orange.gradient, lineWidth: 2))
                    Button("Process") {
+                       results = []
                        let range = NSRange(0..<inputString.count)
                        let foundContent = detector.matches(
                          in: inputString,
@@ -59,8 +60,8 @@ struct NlDataDetector: View {
        }
 }
 
-struct NlDataDetector_Previews: PreviewProvider {
+struct NLDataDetector_Previews: PreviewProvider {
     static var previews: some View {
-        NlDataDetector()
+        NLDataDetector()
     }
 }
